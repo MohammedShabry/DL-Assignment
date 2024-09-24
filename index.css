@@ -1,0 +1,194 @@
+/* Container for the profile page */
+.profile-page {
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  /* Sidebar placeholder */
+  .sidebar {
+    width: 298px;
+    height: 100vh; /* Ensure it can expand as needed */
+   
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex-grow: 1;
+    background-color: #f8f9fa;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  /* Top Navbar */
+  .top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 106px;
+  }
+  
+  .dashboard {
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: #A39B9B;
+    margin-left: 80px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .user-name {
+    font-family: 'Cabin';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-align: left;
+    color: #000000;
+    padding-right: 80px;
+  }
+  
+  /* Vertical line between image and name */
+  .user-details::before {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: #A0A0A0;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  /* Horizontal Line under Top Navbar */
+  .navbar-divider {
+    border-bottom: 1px solid #A0A0A0;
+    margin-left: 80px;
+    margin-right: 80px
+  }
+  
+  /* Profile section */
+  .profile-section {
+    margin-top: 22px; /* Positioned 22px below navbar-divider */
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .profile-photo {
+    width: 303px;
+    height: 317px;
+    margin-left: 73px;
+  }
+  
+  /* Form Box - Positioned below profile section */
+  .form-box {
+    margin-top: 28px; 
+    margin-right: 114px;
+    height: 542px;
+    padding: 20px;
+    margin-left: 66px;
+    border-radius: 8px;
+    border: 1px solid #BBFAB5;
+    color: #BBFAB5;
+  }
+  
+  /* Topic: Personal Information */
+  .personal-info-header {
+    font-family: 'DM Sans';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.04px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  /* Personal info form */
+  .personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 151px;
+  }
+  
+  /* Update form group styles for two items per line with specified gap */
+  .form-group {
+    width: calc(50% - 150.5px); /* Half of width minus half of gap */
+    margin-right: 301px; /* Horizontal gap */
+    height: 85px; 
+    margin-top: 32px;
+  }
+  
+  .form-group:nth-child(2n) {
+    margin-right: 0; /* Remove right margin for every second item */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #A39B9B;
+  }
+  
+  .form-group input {
+    width: 100%;
+    height: 50px; /* Adjusted height */
+    padding-left: 20px;
+    font-family: 'DM Sans';
+    border-radius: 8px;
+    border: 1px solid #DADCDD;
+    color: #000000;
+    background: #fff;
+  }
+  
+  /* Action Buttons - Positioned below the form box */
+  .action-buttons {
+    margin-top: 98px;
+    margin-left: 58px;
+    margin-bottom:122px ;
+    display: flex; /* Use flexbox to align buttons horizontally */
+    gap: 24px; /* Space between buttons */
+  }
+  
+  .disable-btn {
+    width: 179px; /* Fixed width */
+    height: 55px; /* Fixed height */
+    padding: 16px 20px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #52A401; /* Border style */
+    background-color: #fff; /* Light green background */
+    cursor: pointer; /* Pointer on hover */
+    color: #52A401;
+    font-family: 'DM Sans';
+    
+  }
+  
+  .delete-btn {
+    width: 177px; /* Fixed width */
+    height: 55px; /* Fixed height */
+    padding: 16px 20px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #52A401; /* Green background */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Pointer on hover */
+    font-family: 'DM Sans';
+  }
+  
